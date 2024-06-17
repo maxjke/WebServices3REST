@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:mysql://mysql1.ad.viko.lt/mjakovcenkobankrest
+    username: admin
+    password: admin
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+
+  application:
+    name: bankrest
+server:
+    port: 5252
